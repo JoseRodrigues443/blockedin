@@ -1,0 +1,19 @@
+{
+  "name": "blockedin",
+  "version": "1.0.0",
+  "description": "A Decentralized professional networking and career development social media app built with Web3 technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseRodrigues443/blockedin.git"
+  },
+  "author": "JoseMiguel443",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/JoseRodrigues443/blockedin/issues"
+  },
+  "homepage": "https://github.com/JoseRodrigues443/blockedin#readme"
+}
