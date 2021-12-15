@@ -1,4 +1,4 @@
-name: Merge Blockchain CI
+name: Blockchain CI
 
 on: [push, pull_request]
 
