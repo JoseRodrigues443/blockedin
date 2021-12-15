@@ -1,4 +1,4 @@
-name: UI CI
+name: React UI CI/CD
 
 on: [push, pull_request]
 
