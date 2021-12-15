@@ -4,7 +4,10 @@
   "description": "A Decentralized professional networking and career development social media app built with Web3 technologies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ui": "cd ui && npm i",
+    "build:blockchain": "cd blockchain && npm i",
+    "run:ui": "cd ui && npm run start",
+    "run:blockchain": "cd blockchain && echo \"TODO: Add localhost blockchain\" && exit 1"
   },
   "repository": {
     "type": "git",
