@@ -1,8 +1,7 @@
 import React from 'react';
 import Base from './views/Base';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-const mdTheme = createTheme();
+import { ThemeProvider } from '@mui/material/styles';
+import mdTheme from './themes/material';
 
 function App() {
   return (
