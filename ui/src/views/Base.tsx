@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,8 +7,6 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -17,8 +14,10 @@ import Copyright from '../components/Copyright';
 import List from '@mui/material/List';
 
 import { mainListItems, secondaryListItems } from '../components/SideBarItems';
+
 import { AppBar } from '../components/AppBar';
 import { Drawer } from '../components/Drawer';
+import Posts from './Posts';
 
 
 function BaseContent() {
@@ -100,40 +99,7 @@ function BaseContent() {
             >
                 <Toolbar />
                 <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-                    <Grid container spacing={3}>
-                        {/* Chart */}
-                        <Grid item xs={12} md={8} lg={9}>
-                            <Paper
-                                sx={{
-                                    p: 2,
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    height: 240,
-                                }}
-                            >
-                                Test
-                            </Paper>
-                        </Grid>
-                        {/* Recent Deposits */}
-                        <Grid item xs={12} md={4} lg={3}>
-                            <Paper
-                                sx={{
-                                    p: 2,
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    height: 240,
-                                }}
-                            >
-                                Test 2
-                            </Paper>
-                        </Grid>
-                        {/* Recent Orders */}
-                        <Grid item xs={12}>
-                            <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                                Test 3
-                            </Paper>
-                        </Grid>
-                    </Grid>
+                    <Posts />
                     <Copyright sx={{ pt: 4 }} />
                 </Container>
             </Box>
