@@ -10,8 +10,8 @@ import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Copyright from '../components/Copyright';
 import List from '@mui/material/List';
@@ -33,10 +33,10 @@ function BaseContent() {
             <AppBar position="absolute" open={open}>
                 <Toolbar
                     sx={{
-                        pr: '24px', // keep right padding when drawer closed
+                        pr: '14px', // keep right padding when drawer closed
                     }}
                 >
-                    <IconButton
+                    {/* <IconButton
                         edge="start"
                         color="inherit"
                         aria-label="open drawer"
@@ -47,14 +47,18 @@ function BaseContent() {
                         }}
                     >
                         <MenuIcon />
-                    </IconButton>
+                    </IconButton> */}
                     <Typography
                         component="h1"
                         variant="h6"
                         color="inherit"
                         noWrap
                         sx={{ flexGrow: 1 }}
+                        onClick={toggleDrawer}
                     >
+                        <IconButton>
+                            <ViewInArIcon />
+                        </IconButton>
                         BlockedIn
                     </Typography>
                     <IconButton color="inherit">
