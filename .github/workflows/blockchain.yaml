@@ -1,4 +1,4 @@
-name: Blockchain UI CI/CD
+name: Blockchain CI/CD
 
 on: [push, pull_request]
 
