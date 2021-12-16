@@ -2,7 +2,7 @@
   "name": "blockedin",
   "version": "1.0.0",
   "description": "A Decentralized professional networking and career development social media app built with Web3 technologies",
-  "main": "index.js",
+  "main": "README.md",
   "scripts": {
     "build:ui": "cd ui && npm i",
     "build:blockchain": "cd blockchain && npm i",
