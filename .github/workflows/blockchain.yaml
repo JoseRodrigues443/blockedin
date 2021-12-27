@@ -6,6 +6,7 @@ jobs:
   lint:
     name: Lint Node and Solidity Code
     runs-on: ubuntu-latest
+    continue-on-error: true
     defaults:
           run:
             working-directory: ./blockchain
