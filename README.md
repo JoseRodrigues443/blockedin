@@ -2,6 +2,7 @@
 
 [![Blockchain CI](https://github.com/JoseRodrigues443/blockedin/actions/workflows/blockchain.yaml/badge.svg)](https://github.com/JoseRodrigues443/blockedin/actions/workflows/blockchain.yaml) 
 [![React UI CI](https://github.com/JoseRodrigues443/blockedin/actions/workflows/ui.yaml/badge.svg)](https://github.com/JoseRodrigues443/blockedin/actions/workflows/ui.yaml)
+[![React UI CI](https://github.com/JoseRodrigues443/blockedin/actions/workflows/api.yaml/badge.svg)](https://github.com/JoseRodrigues443/blockedin/actions/workflows/api.yaml)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/JoseRodrigues443/blockedin)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JoseRodrigues443/blockedin)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)

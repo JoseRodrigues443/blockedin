@@ -79,8 +79,8 @@ export default function Post(props: PostProps) {
             <CardMedia
                 component="img"
                 height="194"
-                image="/static/images/cards/paella.jpg"
-                alt="Paella dish"
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NFT_Icon.png/250px-NFT_Icon.png"
+                alt="Post 1"
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">
