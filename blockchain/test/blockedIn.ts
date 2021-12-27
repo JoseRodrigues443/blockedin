@@ -1,3 +1,4 @@
+import { expect } from "chai";
 import { ethers } from "hardhat";
 
 describe("BlockedIn", function () {
@@ -6,13 +7,6 @@ describe("BlockedIn", function () {
     const blockedIn = await BlockedIn.deploy();
     await blockedIn.deployed();
 
-    // expect(await blockedIn.greet()).to.equal("Hello, world!");
-
-    // const setGreetingTx = await blockedIn.setGreeting("Hola, mundo!");
-
-    // // wait until the transaction is mined
-    // await setGreetingTx.wait();
-
-    // expect(await blockedIn.greet()).to.equal("Hola, mundo!");
+    expect(await blockedIn.name()).to.equal("BlockedIn");
   });
 });

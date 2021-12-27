@@ -8,5 +8,4 @@ contract Company is UserBase {
 
     constructor(address _newOwner, Information memory _profileInformation) UserBase(_newOwner, _profileInformation) {
     }
-
 }
