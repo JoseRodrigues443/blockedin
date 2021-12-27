@@ -8,12 +8,15 @@ contract Post {
 
     string public name;
 
+    enum PostType{ NEWS, POST, JOB_OFFER, EVENT }
+
     struct Post {
         uint id;
         string title;
         string description;
         string hash;
         UserBase author;
+        PostType postType; 
     }
 
     event PostCreated(
@@ -21,7 +24,8 @@ contract Post {
         string title,
         string description,
         string hash,
-        UserBase author
+        UserBase author,
+        PostType postType
     );
 
     uint public postCount;
@@ -31,7 +35,7 @@ contract Post {
         name = "Post";
     }
 
-    function writePost(string memory _title, string memory _description, string memory _hash, UserBase _author) public {
+    function writePost(string memory _title, string memory _description, string memory _hash, UserBase _author, PostType _postType) public {
         // Make sure the post title exists
         require(bytes(_title).length > 0);
         // Make sure post description exists
@@ -45,9 +49,9 @@ contract Post {
         postCount ++;
 
         // Add post to the contract
-        posts[postCount] = Post(postCount, _title, _description, _hash, _author);
+        posts[postCount] = Post(postCount, _title, _description, _hash, _author, _postType);
         // Trigger an event
-        emit PostCreated(postCount, _title, _description, _hash, _author);
+        emit PostCreated(postCount, _title, _description, _hash, _author, _postType);
     }
 
 }

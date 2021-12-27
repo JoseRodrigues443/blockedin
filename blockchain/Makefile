@@ -19,6 +19,11 @@ test-report:
 test:
 	npx hardhat test
 
+ci:
+	make compile
+	make size
+	make test
+
 size:
 	npx hardhat size-contracts
 	echo "A contract should be less than 24KB"

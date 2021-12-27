@@ -51,6 +51,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@lukso/universalprofile-smart-contracts": "^0.4.1"
+    "@lukso/universalprofile-smart-contracts": "^0.4.1",
+    "hardhat-contract-sizer": "^2.3.0"
   }
 }
