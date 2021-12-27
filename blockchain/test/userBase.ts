@@ -18,7 +18,9 @@ describe("UserBase", () => {
     const userBase = await UserBase.deploy(owner.address, hashInformation);
     await userBase.deployed();
 
-    // expect(await userBase.owner).to.equal(owner);
-    // expect(await userBase.profileInformation).to.equal(hashInformation);
+    expect(await userBase.owner()).to.equal(owner.address);
+    expect(await userBase.profileInformation()).to.equal(
+      hashInformation.profileHash
+    );
   });
 });
