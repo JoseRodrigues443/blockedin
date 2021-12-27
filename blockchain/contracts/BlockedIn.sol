@@ -1,7 +1,8 @@
-//SPDX-License-Identifier: MIT
+//SPDX-License-Identifier: GPL3
 pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
+import "./UserBase.sol";
 
 contract BlockedIn {
 
@@ -12,7 +13,7 @@ contract BlockedIn {
         string description;
         string imgHash;
         uint tipAmount;
-        address author;
+        UserBase author;
     }
 
     uint public postCount;

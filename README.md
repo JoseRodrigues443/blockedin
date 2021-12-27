@@ -12,7 +12,7 @@
 
 A Decentralized professional networking and career development social media app built with Web3 technologies
 
-
+![BlockedIn flow](./docs/img/universal-profile.jpg)
 
 # License
 
