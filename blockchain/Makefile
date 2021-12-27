@@ -30,3 +30,6 @@ size:
 
 console:
 	npx hardhat console
+
+local:
+	npx hardhat node
