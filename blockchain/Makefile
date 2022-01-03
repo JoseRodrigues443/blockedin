@@ -33,3 +33,6 @@ console:
 
 local:
 	npx hardhat node
+
+deploy-local:
+	npx hardhat run scripts/deploy.ts --network localhost

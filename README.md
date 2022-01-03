@@ -13,6 +13,26 @@ A Decentralized professional networking and career development social media app 
 
 ![BlockedIn flow](./docs/img/universal-profile.jpg)
 
+## Local env
+
+```bash
+
+    # Terminal 1
+    cd blockchain
+    make compile
+    make test
+    make local
+
+    # Terminal 2
+    cd blockchain
+    make deploy-local
+
+    # Terminal 3
+    make frontend
+
+
+```
+
 # License
 
 BlockedIn is available under the GNU General Public License version 3. See the [LICENSE](LICENSE) file for more info.
