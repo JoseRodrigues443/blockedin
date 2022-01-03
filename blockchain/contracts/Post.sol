@@ -8,15 +8,15 @@ contract Post {
 
     string public name;
 
-    enum PostType{ NEWS, POST, JOB_OFFER, EVENT }
+    enum PostType { NEWS, POST, JOB_OFFER, EVENT }
 
     struct Post {
         uint id;
         string title;
         string description;
         string hash;
-        UserBase author;
-        PostType postType; 
+        address author;
+        PostType postType;
     }
 
     event PostCreated(
@@ -24,7 +24,7 @@ contract Post {
         string title,
         string description,
         string hash,
-        UserBase author,
+        address author,
         PostType postType
     );
 
@@ -35,13 +35,13 @@ contract Post {
         name = "Post";
     }
 
-    function writePost(string memory _title, string memory _description, string memory _hash, UserBase _author, PostType _postType) public {
+    function writePost(string memory _title, string memory _description, string memory _hash, PostType _postType) public {
         // Make sure the post title exists
-        require(bytes(_title).length > 0);
+        require(bytes(_title).length > 0, "A title is necessary");
         // Make sure post description exists
-        require(bytes(_description).length > 0);
+        require(bytes(_description).length > 0, "A Description is necessary");
         // Make sure uploader address exists
-        require(msg.sender!=address(0));
+        require(msg.sender!=address(0), "A author is necessary");
         // TODO: Make sure that the msg.send is the same as the Lukso Profile
         // require(msg.sender!=_author);
 
@@ -49,9 +49,9 @@ contract Post {
         postCount ++;
 
         // Add post to the contract
-        posts[postCount] = Post(postCount, _title, _description, _hash, _author, _postType);
+        posts[postCount] = Post(postCount, _title, _description, _hash, msg.sender, _postType);
         // Trigger an event
-        emit PostCreated(postCount, _title, _description, _hash, _author, _postType);
+        emit PostCreated(postCount, _title, _description, _hash, msg.sender, _postType);
     }
 
 }
