@@ -15,6 +15,8 @@ A Decentralized professional networking and career development social media app 
 
 ## Local env
 
+> Note: The react application uses symlinks to obtain the artifacts of the blockchain folder. Make sure your system works with symlinks properly (ex: unix systems). Setups with FAT filesystem will not work with this.
+
 ```bash
 
     # Terminal 1
