@@ -18,7 +18,7 @@ describe("Post", () => {
     [owner] = await ethers.getSigners();
   });
 
-  it("Should deploy UserBase contract", async () => {
+  it("Should deploy post contract", async () => {
     const PostContract = await ethers.getContractFactory("Post");
     post = await PostContract.deploy();
     await post.deployed();

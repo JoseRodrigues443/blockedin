@@ -1,5 +1,8 @@
 .PHONY: all test clean
 
+clean:
+	npx hardhat clean
+
 compile:
 	npx hardhat compile
 
