@@ -50,7 +50,7 @@ describe("Job", () => {
   it("Should mint", async () => {
     const expectedTokenId = 1;
 
-    expect(dateToBigNumber(new Date("2012.08.10"))).to.be.equal(1344553200);
+    expect(dateToBigNumber(new Date(1344556800000))).to.be.equal(1344556800);
 
     expect(await job.createNFT(employee.address, uri, title, description, startDate))
       .to.emit(job, "Minted")
