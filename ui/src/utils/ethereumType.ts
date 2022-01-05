@@ -718,6 +718,7 @@ export interface Metamask {
 }
 
 export interface Ethereum {
+    enable(): [any] | PromiseLike<[any]>;
     _events: Events;
     _eventsCount: number;
     _maxListeners: number;
